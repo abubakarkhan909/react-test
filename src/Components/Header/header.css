@@ -1,0 +1,350 @@
+
+header {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    background: #fff;
+  }
+  header .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+  }
+  header .logo {
+    margin-right: auto;
+    height: 40px;
+    width: 163px;
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+  }
+  header .logo a {
+    display: block;
+    line-height: 11px;
+  }
+  header .navbar nav {
+    margin-left: auto;
+  }
+  header .navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+  header .navbar nav ul li {
+    margin-right: 32px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  header .navbar nav ul li.btn a {
+    margin: 0px 0px 0px 6px;
+    border: 1px solid #6F9F00;
+    padding: 5px 17px;
+    border-radius: 50px;
+    color: #fff;
+  }
+  header .navbar nav ul li.btn a:hover {
+    background: #6F9F00;
+    color: #fff;
+  }
+  header .navbar nav ul li a {
+    font-size: 16px;
+    color: #000;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    font-weight: 400;
+    transition: color 0.4s ease-in-out;
+  }
+  header .navbar nav ul li a:hover {
+    color: var(--ThemeHoverColor);
+  }
+  header .rightbtn .dropdown {
+    float: right;
+  }
+  header .rightbtn .dropdown .dropdown-toggle {
+    padding: 0;
+    border: none;
+    position: relative;
+    background: transparent;
+  }
+  header .rightbtn .dropdown .dropdown-toggle img {
+    max-width: 22px;
+  }
+  header .rightbtn .dropdown .dropdown-toggle::after {
+    content: none;
+  }
+  header .rightbtn .dropdown .dropdown-toggle .badge {
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    top: auto;
+    height: 16px;
+    min-width: 16px;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-radius: 200px;
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #6F9F00;
+  }
+  header .rightbtn .dropdown .dropdown-menu {
+    
+    background-color: #fff;
+    border-color: #ddd;
+    animation: animationcartmenu ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    width: 270px;
+    border-radius: 5px;
+    z-index: 99999;
+    margin-top: 11px;
+    left: auto !important;
+    position: absolute;
+    right: 0 !important;
+    transform: translate(0px, 16px) !important;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items {
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-left: 0;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-thumb .image {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-detail {
+    float: left;
+    padding-left: 74px;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-detail h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-detail .item-s {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-detail .item-s .fas {
+    color: #6F9F00;
+    float: right;
+    margin-left: 8px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li .item-detail .item-s .fas:hover {
+    color: #597f00;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items li:last-child .btn {
+    width: 100%;
+  }
+  header .rightbtn .dropdown .dropdown-menu .shopping-cart-items .item-summary {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 5px;
+    white-space: normal;
+  }
+  
+  .navbarmenu {
+    display: none;
+  }
+  header .navbar nav{
+    display: block;
+  }
+  
+  @media screen and (max-width: 1200px) {  
+    header {
+      position: relative;
+    }
+    header .container {
+      justify-content: flex-end;
+    }
+    header .navbar {
+      order: 1;
+    }
+    header .navbar .navbarmenu {
+      display: block;
+      height: 26px;
+      margin: 17px 0;
+      overflow: hidden;
+      position: relative;
+      transition: width 0.3s ease-in;
+      width: 38px;
+      margin-left: auto;
+      padding: 0px;
+      color: currentColor;
+      cursor: pointer;
+    }
+    header .navbar .navbarmenu span {
+      position: static;
+    }
+    header .navbar .navbarmenu span::before {
+      border-radius: 4px;
+      content: "";
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      transition: background-color 0.3s ease-in, rotate 0.3s ease-in, translate 0.3s ease-in, width 0.3s ease-in;
+      top: 0;
+      transform-origin: right top;
+      width: 88%;
+      background-color: #15181a;
+      height: 3px;
+    }
+    header .navbar .navbarmenu span::after {
+      border-radius: 4px;
+      content: "";
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      transition: background-color 0.3s ease-in, rotate 0.3s ease-in, translate 0.3s ease-in, width 0.3s ease-in;
+      bottom: 0;
+      transform-origin: right top;
+      width: 60%;
+      background-color: #15181a;
+      height: 3px;
+    }
+    header .navbar .navbarmenu::after {
+      border-radius: 4px;
+      content: "";
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      transition: background-color 0.3s ease-in, rotate 0.3s ease-in, translate 0.3s ease-in, width 0.3s ease-in;
+      top: 50%;
+      translate: 0 -50%;
+      width: 88%;
+      background-color: #15181a;
+      height: 3px;
+    }
+    header .navbar .navbarmenu.change {
+      margin-right: 0;
+    }
+    header .navbar .navbarmenu.change::after {
+      display: none;
+    }
+    header .navbar .navbarmenu.change span:before {
+      rotate: -46deg;
+      scale: 1.2 1;
+      translate: -3px -2px;
+      display: block;
+      width: 70%;
+    }
+    header .navbar .navbarmenu.change span:after {
+      rotate: 46deg;
+      scale: 1.2 1;
+      translate: 0 1px;
+      display: block;
+      width: 88%;
+    }
+    header .navbar nav {
+      display: none;
+      height: 100vh;
+      position: fixed;
+      border: none;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      transition: all 0.5s;
+      max-width: 350px;
+      min-width: 350px;
+      background-color: #fff;
+      overflow-y: auto;
+      flex-direction: column;
+      padding: 60px 0 16px;
+    }
+    header .navbar nav ul {
+      display: block;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+      padding: 0 16px;
+      padding-top: 20px;
+      height: calc(100vh - 182px);
+      overflow-y: auto;
+    }
+    header .navbar nav ul li {
+      margin-right: 0;
+      margin-bottom: 12px;
+      height: auto;
+    }
+    header .navbar nav ul li a {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 5px 0;
+    }
+    header .navbar nav ul li.btn a {
+      margin-left: 0;
+    }
+    header .navbar nav .sub-menu.show {
+      display: block;
+    }
+    header .navbar nav.active {
+      display: block;
+    }
+    header .rightbtn {
+      order: 0;
+    }
+    header .rightbtn .dropdown .dropdown-toggle {
+      margin-right: 5px;
+    }
+    header .rightbtn .dropdown .dropdown-toggle img {
+      max-width: 30px;
+    }
+    header .rightbtn a {
+      width: fit-content;
+    }
+    header .rightbtn.active {
+      display: block;
+    }
+  }  

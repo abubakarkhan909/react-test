@@ -1,0 +1,245 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  body.overflow {
+    overflow: hidden;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1142px;
+    margin: 0 auto;
+    padding: 0px 15px;
+  }
+  .container.small_container {
+    max-width: 870px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container {
+      padding: 0px 16px;
+    }
+  }
+  h1 {
+    font-size: 38px;
+    font-weight: 400;
+  }
+  
+  h2 {
+    font-size: 38px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  h3 {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  h4 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  h5 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  h6 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  p {
+    color: #000;
+    font-size: 16px;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+    opacity: 1;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  :-ms-input-placeholder {
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+    opacity: 1;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  ::placeholder {
+    color: #000;
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 1;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  input:not([type=submit]),
+  textarea {
+    background: #fff;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #000;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    border: 0px;
+    font-weight: 300;
+    width: 100%;
+    padding: 13px 15px;
+  }
+  input:not([type=submit]):focus,
+  textarea:focus {
+    outline: 0px;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #000;
+  }
+  
+  textarea {
+    height: 200px;
+    resize: vertical;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ::selection {
+    background-color: #6F9F00;
+    color: #fff;
+  }
+  
+  ::-moz-selection {
+    background-color: #6F9F00;
+    color: #fff;
+  }
+  
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      translate: -20%;
+    }
+    100% {
+      opacity: 1;
+      translate: 0;
+    }
+  }
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      translate: 0 20%;
+    }
+    100% {
+      opacity: 1;
+      translate: 0;
+    }
+  }
+  :root {
+    --ThemeLightColor:rgb(241, 245, 230, 0.5);
+    --ThemeHoverColor: #597f00;
+    --themebannertitle: #AAC17E;
+    --bgthemelightcolor:#f1f5e6;
+  }
+  .mobile-overlay {
+    display: none;
+    top: 38px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #3c3c3c;
+    z-index: 0;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  .mobile-overlay.active {
+    display: block;
+  }
+  .heaidng_dd {
+    text-align: center;
+  }
+  .heaidng_dd h2 {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .heaidng_dd p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+.btn {
+    font-size: 16px;
+    line-height: normal;
+    color: #6F9F00;
+    text-decoration: none;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    text-transform: capitalize;
+    padding: 14px 25px;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 5px;
+  }
+  .btn i {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .btn-primary {
+    background-color: #6F9F00;
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background-color: #597f00;
+  }
+  
+@media screen and (max-width: 1200px) {
+    .main_container.blurred {
+      filter: blur(10px);
+    }
+}
